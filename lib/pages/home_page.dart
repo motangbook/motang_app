@@ -56,6 +56,13 @@ class _HomePageState extends State<HomePage> {
     // 初始化 屏幕适配  后面不用初始化了
     ScreenUtil.instance = ScreenUtil(width: 750, height: 1334)..init(context);
     return new Scaffold(
+      appBar: new AppBar(
+        title: new Text("墨唐书城"),
+        centerTitle: true,
+        actions: <Widget>[
+          IconButton(icon: new Icon(Icons.search), onPressed: null)
+        ],
+      ),
       bottomNavigationBar: new BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         currentIndex: currentIndex,
