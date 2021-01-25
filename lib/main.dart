@@ -6,8 +6,10 @@ void main() {
 class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+
     return new MaterialApp(
       title: "flutter deemo",
+      debugShowCheckedModeBanner: false,
       theme: new ThemeData(
         // brightness: Brightness.dark,
         primaryColor: Colors.lightBlue[800],
@@ -15,7 +17,6 @@ class App extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: new HomePage(),
-      routes: ,
     );
   }
 }
